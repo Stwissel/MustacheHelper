@@ -52,9 +52,9 @@ public class MustacheHelper {
 
     private boolean                     isInitialized   = false;
     private final Map<String, String>   templateStrings = new HashMap<String, String>();
-
     private final Map<String, Mustache> templates       = new HashMap<String, Mustache>();
     private MustacheFactory             factory         = null;
+
     public MustacheHelper() {
         // Constructor for access via managed bean
         this.isInitialized = false;
@@ -69,6 +69,7 @@ public class MustacheHelper {
         this.initFromView(s, templateView);
     }
 
+    
     /**
      * Adds a template from a document with and without mime
      * 
@@ -99,7 +100,6 @@ public class MustacheHelper {
         }
     }
 
-    
     /**
      * Turns the document into an object that can be used in a mustache template
      * @param doc
@@ -122,6 +122,13 @@ public class MustacheHelper {
             this.templates.put(templateName, m);
         }
         return this.templates.get(templateName);
+    }
+    
+    /**
+     * Clears the mustache template cache
+     */
+    public void reset() {
+        this.templates.clear();
     }
 
     /**
@@ -147,10 +154,6 @@ public class MustacheHelper {
 
         // Memorize that we are done
         this.isInitialized = true;
-    }
-    
-    public boolean isInitialized() {
-        return this.isInitialized;
     }
 
     /**
@@ -183,12 +186,12 @@ public class MustacheHelper {
     public void renderDocument(String templateName, Document doc, OutputStream out) throws MustacheError {
         this.renderDocument(templateName, doc, out, null);
     }
-
+    
     public void renderDocument(String templateName, Document doc, OutputStream out, DocumentResolver dr) throws MustacheError {
         Object docObject = this.getDocObject(doc, dr);
         this.render(templateName, docObject, out);
     }
-    
+
     /**
      * Convenience method to render a document to a String
      * 
@@ -201,7 +204,7 @@ public class MustacheHelper {
     public String renderDocumentToString(String templateName, Document doc) throws IOException, MustacheError {
        return this.renderDocumentToString(templateName, doc, null);
     }
-
+    
     public String renderDocumentToString(String templateName, Document doc, DocumentResolver dr) throws IOException, MustacheError {
         ByteArrayOutputStream result = new ByteArrayOutputStream();
         this.renderDocument(templateName, doc, result, dr);
@@ -209,7 +212,7 @@ public class MustacheHelper {
         result.close();
         return result.toString();
     }
-    
+
     /**
      * Closest method to a default Mustache. Takes any object - should be a collection map or bean
      * 
@@ -225,14 +228,6 @@ public class MustacheHelper {
         result.flush();
         result.close();
         return result.toString();
-    }
-
-    /**
-     * Clears the mustache template cache
-     */
-    public void reset() {
-        this.templates.clear();
-        this.isInitialized = false; 
     }
 
 }

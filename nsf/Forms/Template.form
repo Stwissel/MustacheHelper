@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<form name='Template' alias='template' xmlns='http://www.lotus.com/dxl' version='9.0'
+ maintenanceversion='1.0' replicaid='48257D920052B683' publicaccess='false'
+ designerversion='8.5.3' comment='Simple Mustache Template' renderpassthrough='true'>
+<noteinfo noteid='16e' unid='646600CF3E4EA91348257D9200534A37' sequence='2'>
+<created><datetime>20141116T230944,87+08</datetime></created>
+<modified><datetime>20141116T231056,39+08</datetime></modified>
+<revised><datetime>20141116T231056,38+08</datetime></revised>
+<lastaccessed><datetime>20141116T231056,38+08</datetime></lastaccessed>
+<addedtofile><datetime>20141116T230945,00+08</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></updatedby>
+<wassignedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></wassignedby><code
+ event='windowtitle'><formula>"Template"</formula></code>
+<body><richtext>
+<pardef id='1'/>
+<par def='1'/>
+<par def='1'><run><font style='bold'/>Template Name</run></par>
+<par def='1'><field type='text' kind='editable' name='Subject'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par>
+<par def='1'/>
+<par def='1'><run><font style='bold'/>Template Content</run></par>
+<par def='1'><field type='text' kind='editable' name='Body'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></richtext></body>
+<item name='$$ScriptName' summary='false' sign='true'><text>template</text></item></form>
+

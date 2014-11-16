@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+	<xp:this.data>
+		<xp:dominoDocument var="document1" formName="Fruit"></xp:dominoDocument>
+	</xp:this.data>
+
+	<xp:this.resources>
+		<xp:script src="/Helpers.jss" clientSide="false"></xp:script>
+	</xp:this.resources>
+	<xp:table>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Name:" id="subject_Label1"
+					for="subject1">
+				</xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.Subject}"
+					id="subject1">
+				</xp:inputText>
+			</xp:td>
+			<xp:td>
+				<xp:label value="Plain Text representation"
+					id="label1">
+				</xp:label></xp:td>
+			<xp:td>
+				
+			<xp:text escape="true" id="computedField1" rendered="#{javascript:!document1.isNewNote();}">
+				<xp:this.value><![CDATA[#{javascript:return applyTemplate(document1.getDocument(),"Default");}]]></xp:this.value>
+			</xp:text></xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Taste:" id="taste_Label1"
+					for="taste1">
+				</xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.Taste}" id="taste1"></xp:inputText>
+			</xp:td>
+			<xp:td></xp:td>
+			<xp:td>
+				</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Color:" id="color_Label1"
+					for="color1">
+				</xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.Color}" id="color1"></xp:inputText>
+			</xp:td>
+			<xp:td>
+				<xp:label value="Fancy HTML" id="label2"></xp:label></xp:td>
+			<xp:td>
+				
+			<xp:text escape="false" id="computedField2" rendered="#{javascript:!document1.isNewNote();}">
+				<xp:this.value><![CDATA[#{javascript:return applyTemplate(document1.getDocument(),"Color");}]]></xp:this.value>
+			</xp:text></xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td></xp:td>
+			<xp:td>
+				<xp:messages layout="table" style="color:red"
+					id="messages1">
+				</xp:messages>
+			</xp:td>
+			<xp:td></xp:td>
+			<xp:td>
+				</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td></xp:td>
+			<xp:td>
+				<xp:button value="Submit" id="button1">
+					<xp:eventHandler event="onclick" submit="true"
+						refreshMode="complete" immediate="false" save="true"
+						id="eventHandler1">
+					</xp:eventHandler>
+				</xp:button>
+			</xp:td>
+			<xp:td>
+				<xp:link escape="true" text="New Fruit" id="link1" value="/Fruits.xsp"><xp:eventHandler event="onclick" submit="true" refreshMode="complete" immediate="true"></xp:eventHandler></xp:link></xp:td>
+			<xp:td>
+				<xp:button value="Reset template" id="button2">
+					<xp:eventHandler event="onclick" submit="true"
+						refreshMode="complete">
+						<xp:this.action><![CDATA[#{javascript:Mustache.reset();}]]></xp:this.action>
+					</xp:eventHandler></xp:button></xp:td>
+		</xp:tr>
+	</xp:table>
+	<xp:br></xp:br>
+	<xp:viewPanel rows="30" id="viewPanel1" viewStyle="width:40%"
+		pageName="/Fruits.xsp">
+		<xp:this.facets>
+			<xp:pager partialRefresh="true" layout="Previous Group Next"
+				xp:key="headerPager" id="pager1">
+			</xp:pager>
+		</xp:this.facets>
+		<xp:this.data>
+			<xp:dominoView var="view1" viewName="Fruits"></xp:dominoView>
+		</xp:this.data>
+		<xp:viewColumn columnName="Subject" id="viewColumn3" displayAs="link">
+			<xp:viewColumnHeader value="name" id="viewColumnHeader3"></xp:viewColumnHeader>
+		</xp:viewColumn><xp:viewColumn columnName="Color" id="viewColumn1">
+			<xp:viewColumnHeader value="Color" id="viewColumnHeader1"></xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="Taste" id="viewColumn2">
+			<xp:viewColumnHeader value="Taste" id="viewColumnHeader2"></xp:viewColumnHeader>
+		</xp:viewColumn>
+		
+	</xp:viewPanel>
+	<xp:this.navigationRules>
+		<xp:navigationRule outcome="xsp-success" viewId="/Fruits.xsp"></xp:navigationRule>
+	</xp:this.navigationRules>
+</xp:view>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
+ maintenanceversion='1.0' replicaid='48257D920052B683'>
+<noteinfo noteid='11e' unid='D2DBE040CD27633B48257D920052B68F' sequence='7'>
+<created><datetime>20141116T230326,87+08</datetime></created>
+<modified><datetime>20141116T235157,36+08</datetime></modified>
+<revised><datetime>20141116T235157,35+08</datetime></revised>
+<lastaccessed><datetime>20141116T235157,35+08</datetime></lastaccessed>
+<addedtofile><datetime>20141116T230326,89+08</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></updatedby>
+<item name='$Daos'><text>0</text></item>
+<item name='$TITLE'><text>Mustache Template Library Sample</text></item>
+<item name='IconBitmap' summary='true'>
+<rawitemdata type='6'>
+AiAgAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAARERERERERERERERERERERERERERERERERERERERERERERERER
+EREREREREREREREREREREREREREREREREREREREREREeAO8eAA8RERERERERERER7gAA4AAOERER
+EREREREREfHwAAAOHxEREREREREREREREf//8RERERERERERERERERERERHxERERERERERERH//+
+8RH//+EREREREREREf8REfEf8REeERERERERERH/ERH/HhERHhERERERERER7xER/u4RER7xERER
+EREREe7//+7u///w4RERERERERH///ERER///xEREREREREREREf///xEREREREREREREf7gAAAA
+AA7vEREREREREf4AAAAAAAAAAA4REREREREAAAAAAAAAAAAA4RERERERAOAAAAAAAAAOAOERERER
+EREeAAAAAAAAARERERERERERHgAAAAAAAAERERERERERER4AAAAAAAABEREREREREREeAAAAAAAA
+ARERERERERERHgAAAAAAAAERERERERERER4AAAAAAAABEREREREREREeAAAAAAAAARERERERERER
+HwAAAAAAAOERERERERERERHwAAAAAA4RERERERERERERH/7uDu7xERERERERERERERERERERERER
+EREREREREREREREREREREREREQ==
+</rawitemdata></item>
+<item name='$DefaultXPage'><text>Fruits.xsp</text></item>
+<item name='$Flags'><text>7JR!</text></item>
+<item name='$LaunchXPageRunOnServer'><text>0</text></item>
+<item name='$FlagsNoRefresh'><text/></item></note>
+

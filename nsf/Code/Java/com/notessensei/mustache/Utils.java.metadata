@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="48257D920052B683" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1b6" sequence="3" unid="5F8D41BC3E76C7E948257D920055AE88">
+<created><datetime>20141116T233552,40+08</datetime></created>
+<modified><datetime>20141116T233552,70+08</datetime></modified>
+<revised><datetime>20141116T233552,69+08</datetime></revised>
+<lastaccessed><datetime>20141116T233552,69+08</datetime></lastaccessed>
+<addedtofile><datetime>20141116T233552,40+08</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></updatedby>
+<wassignedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>com/notessensei/mustache/Utils.java</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>com/notessensei/mustache/Utils.java</text></item></note>
